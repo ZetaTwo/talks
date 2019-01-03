@@ -1,0 +1,15 @@
+# Description
+
+## Bio
+
+Calle Svensson is a security professional and enthusiast. He holds a master's degree in computer science from the Royal Institute of Technology (KTH) following a life-long interest for computers and IT. He has been working as a security consultant since graduating two years ago.
+
+He's a frequent CTF player, both solo and as a member of  HackingForSoju, one of the top ranked CTF teams in the world. This puts him against a wide range of challenges and have helped rapidly expand his knowledge despite only a few years in the security field.
+
+## When all else fails - Reverse engineering with determination
+There is a Swedish proverb, "All methods are good except for the bad ones" which applies very well to reverse engineering. Sometimes targets elude the usual methodologies of reverse engineering and the need for alternative ways to the goal arises. This lightning talk is a sample of war stories from the fields (or playgrounds) of picking apart and understanding systems. The targets give rise to methods ranging from unusual to plain silly and shows that with determination and some creativity, even the most strange of challenges can be mastered. It will feature reverse engineering hardware curcuits as well as compilers created for the sole purpose of messing with people foolish enough to try to reverse engineer it and possibly some strange architecture or two.
+
+
+# Notes
+dynamic vs static
+https://github.com/xoreaxeaxeax/movfuscator
