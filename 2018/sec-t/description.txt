@@ -1,0 +1,11 @@
+1. Carl Svensson <calle.svensson@zeta-two.com>
+2. Carl is a security professional and hobbyist currently working as the head of security at Swedish healthcare startup, Kry. He is a frequent CTF player for the Swedish top team HackingForSoju and an active member of the Swedish and international security community with a great fondness for a broad range of topics, reverse engineering being one of his favorites.
+3. Fun with symbolic execution: exploit development and deobfuscation. In this lightning talk I will demonstrate how to use symbolic execution of machine code to accomplish two different things. First I will show how to go from a bug to a properly exploitable vulnerability and guide the exploitation process. Secondly I will show how symbolic execution can be used to automatically deobfuscate low level obfuscation in binaries making them easier to reverse engineer.
+4. The talk will give a short background to symbolic execution, both conceptually and concretely in the form of presenting "angr". I will then show how symbolic execution can help discover how a specific bug can be triggered and turned into an exploit. Finally I will show how symbolic execution can help in deobfuscation by removing dead code and jump target obfuscation.
+5. My previous talks: https://zeta-two.com/talks, my blog: https://zeta-two.com
+6. Stockholm
+7. Projector for slides
+8. Lightning talk (15 min)
+9. Yes, I am willing to present at the community night.
+10. Yes, it's absolutely fine to record and stream the talk.
+11. This is only a lightning talk CFP
