@@ -1,0 +1,32 @@
+# Security Fest CFP - Carl Svensson
+
+## Who am I?
+
+Carl Svensson
+Head of Security, KRY
+calle.svensson@zeta-two.com
++46 0702268906
+
+## What do you want to present?
+
+Title: Transforming the Tree - AST Manipulation in Scripts
+
+
+Abstract:
+In recent years a lot of great tools have been developed for programmatic manipulation of low level programs.
+This talk instead brings the focus to script languages such as Javascript, PHP, Powershell and VBA.
+These languages are still used for malware and often undergo various forms of obfuscation.
+Multiple techniques exist for deobfuscation but methods are often ad-hoc and language specific.
+I present how manipulating the script code at an AST level and bringing into a unified "meta-language" can leverage theories about graphs and computing to provide a solid foundation on which powerful deobfuscation techniques and other forms of manipulation can be developed.
+Parallels can be drawn to LLVM and similar constructs and how they have changed the way we view and work with low level programs.
+
+Bio:
+Carl Svensson is a security professional and enthusiast. He holds a master's degree in computer science from the Royal Institute of Technology (KTH) following a life-long interest for computers and IT.
+He currently works as the Head of Security at the Swedish healthcare startup KRY which he joined after some time as a security consultant.
+He's a frequent CTF player, both solo and as a member of  HackingForSoju, one of the top ranked CTF teams in the world. This puts him against a wide range of challenges and have helped rapidly expand his knowledge despite only a few years in the security field.
+
+
+Demonstration: Not really, just input, output, results from the tools demonstrated
+Audience participation: hope fully someone dares to ask a question this time ;)
+Length: I prefer a focused 15-20 mins talk, but can be extended if so desired to add more background and context.
+No additional equipment needed.
