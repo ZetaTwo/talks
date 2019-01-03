@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      @page {
+        size: 1024px 768px;
+        margin: 0;
+      }
+
+      @media print {
+        .remark-slide-scaler {
+          width: 100% !important;
+          height: 100% !important;
+          transform: scale(1) !important;
+          top: 0 !important;
+          left: 0 !important;
+        }
+      }
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse
+name: inverse
+layout: true
+---
+
+# Protecting medical data 
+with passwordless authentication
+
+- - -
+
+Carl Svensson, KRY/LIVI @ PasswordsCon 2018
+---
+
+layout: false
+
+.left-column[
+  ## Background
+]
+.right-column[
+# Biography
+
+* MSc in Computer Science, KTH
+* Head of Security, KRY/LIVI
+* CTF: HackingForSoju
+* E-mail (private): calle.svensson@zeta-two.com
+* E-mail (work): carl@kry.se
+* Twitter: @zetatwo
+
+.pull-left[![:img KTH, 100%](img/kth.jpg)]
+.pull-right[![:img KRY, 100%](img/kry_logo.png)]
+.pull-right[![:img KRY, 100%](img/livi_logo.png)]
+]
+---
+
+.left-column[
+  ## Background
+]
+.right-column[
+# Agenda
+
+1. KRY/LIVI, Background
+2. Authentication so far
+3. Expanding to other countries
+4. Design process
+5. Our solution
+6. Results: 6 months in
+]
+---
+
+.left-column[
+  ## Background
+]
+.right-column[
+# Disclaimers, this talk:
+
+* About constraints
+* About business
+* About process
+* Not about technology
+]
+
+???
+
+Although my background is technology and as much as I love a good technical talk, this is not that talk.
+
+---
+
+.left-column[
+  ## Background
+]
+.right-column[
+# KRY/LIVI, Healthcare online
+
+* Online healthcare provider
+* Healthcare data
+* Possibly the most sensitive
+
+
+* "Patient first", UX/UI important
+
+
+* 500 000+ users
+* 3% of primary care in Sweden
+
+.pull-left[![:img KRY, 100%](img/kry_logo.png)]
+.pull-right[![:img KRY, 100%](img/livi_logo.png)]
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+  ## Background
+]
+.right-column[
+# Authentication in Sweden
+
+* BankID, digital identity
+* Issued and validated by banks
+* Private but used in public
+* Well-established
+
+![:img KRY, 50%](img/bankid.png)
+
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+  ## Background
+]
+.right-column[
+# Authentication in Norway
+
+* Pretty much the same as Sweden
+
+![:img KRY, 70%](img/bankid_norway.png)
+
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+  ## Background
+  ## Problem
+]
+.right-column[
+# Expanding to Europe
+
+* In UK, no personal ID number
+* In France, typically no ID at doctor
+
+
+* "Passwords suck" - Our CEO
+* "We are launching in 3 months" - Also our CEO
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+  ## Background
+  ## Problem
+]
+.right-column[
+# Problem statement
+
+* Challenges
+  - Authenticate without passwords
+  - No digital ID available
+  - User friendly
+  - User friendly
+  - User friendly
+  - Secure
+* Consolation
+  - Users are valuable
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+  ## Background
+  ## Problem
+  ## Process
+]
+.right-column[
+# Understand the data model
+
+* A person is not a phone
+* People have kids
+* Device (1-\*) User (\*-\*) Patient
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+## Background
+## Problem
+## Process
+]
+.right-column[
+# Understanding the scenarios
+
+* New device
+ - Access to old
+ - No access to old
+* Old device
+ - Reinstall
+* Strong authentication
+ - Onfido
+* Empty account?
+ - Allow weak authentciation
+* Revokation?
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+## Background
+## Problem
+## Process
+## Solution
+]
+.right-column[
+# Public key challenge-reponse with tiered identity
+
+* Registration
+  - Create a device
+  - If no user, create
+  - If user is patient: Onfido
+* First medical interaction
+  - Create patient
+  - Link user to patient
+* On create patient
+  - Onfido verification
+* Multiple devices per patient
+  - Register new user
+  - Link users
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+## Background
+## Problem
+## Process
+## Solution
+
+]
+.right-column[
+# Results: Pros
+
+* No password!
+* (mostly) Seamless
+* (pretty) User friendly
+* (fairly) Secure
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+## Background
+## Problem
+## Process
+## Solution
+
+]
+.right-column[
+# Results: Cons
+
+* Breaks conventional mental model
+* Overloads words
+* Revokation not fast enough
+]
+
+???
+
+TODO: Notes
+
+---
+
+.left-column[
+## Background
+## Problem
+## Process
+## Solution
+
+]
+.right-column[
+# Evaluation: How did it go?
+
+* Users are registering
+* Users are staying
+* No known incidents
+* Iterative process
+]
+
+???
+
+TODO: Notes
+
+---
+template: inverse
+
+# Thank you for listening!
+Questions?
+---
+count: false
+![:img A, 100%](img/signup_a.png)
+---
+count: false
+![:img A, 100%](img/signup_b.png)
+---
+count: false
+![:img A, 100%](img/signup_c.png)
+---
+count: false
+![:img A, 100%](img/signup_d.png)
+---
+count: false
+![:img A, 100%](img/signup_e.png)
+---
+count: false
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>window.remark || document.write('<script src="../remark-latest.min.js">\x3c/script>');</script>
+    <script>
+      remark.macros.img = function (altText, width) {
+        var url = this;
+        return '<img alt="' + altText + '" src="' + url + '" style="width: ' + width + '" />';
+      };
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
+
