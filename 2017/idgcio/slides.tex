@@ -1,0 +1,195 @@
+\documentclass[10pt, compress]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{amsmath}
+
+%Icons
+\usepackage{fontawesome}
+
+%Syntax highlight
+\usepackage{listings,xcolor}
+\usepackage{inconsolata}
+
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+
+% Language: PHP
+\lstset{
+  language        = php,
+  basicstyle      = \small\ttfamily,
+  keywordstyle    = \color{dkblue},
+  stringstyle     = \color{red},
+  identifierstyle = \color{dkgreen},
+  commentstyle    = \color{gray},
+  emph            =[1]{php},
+  emphstyle       =[1]\color{black},
+  emph            =[2]{if,and,or,else},
+  emphstyle       =[2]\color{dkyellow}
+}
+
+%\usepgfplotslibrary{dateplot}
+
+
+\title{GDPR ur ett startup-perspektiv}	
+%\subtitle{}
+\date{2017-11-14}
+\author{Carl Svensson}
+\institute{Cloud Confessions 2017}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Om mig}
+  
+	\begin{columns}
+		\begin{column}{0.6\textwidth}  
+  
+  		\begin{itemize}
+		  \item Carl Svensson, 26
+		  \item Civilingenjör, teknisk fysik, KTH
+		  \item Säkerhetschef, Kry
+		  \item \faEnvelope \hskip 2mm carl@kry.se
+		  \item \faGlobe \hskip 2mm https://kry.se
+		\end{itemize}
+		
+		\end{column}
+		\begin{column}{0.4\textwidth} 
+			\begin{center}
+			\includegraphics[width=0.4\textwidth]{images/kth.jpg}
+			\end{center}
+			\vspace{1cm}
+			\includegraphics[width=\textwidth]{images/kry_logo.png}
+		\end{column}
+	\end{columns}
+  
+\end{frame}
+
+\begin{frame}{Kry - Framtidens sjukvård}
+\includegraphics[width=\textwidth]{images/kry_logo.png}
+\end{frame}
+
+\begin{frame}{Kry - Framtidens sjukvård}
+
+ \begin{itemize}
+  \item Vårdteknikbolag
+  \item Videomöten med läkare
+  \item Tillgänglig vård för alla
+  \item Unga men snabbväxande
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{Startup - Utmaningar}
+
+ \begin{itemize}
+  \item Få etablerade processer
+  \item Kort (gemensam) erfarenhet
+  \item Snabbväxande
+  \item Patiantdatalagen vs GDPR
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{Startup - Möjligheter}
+
+ \begin{itemize}
+  \item Ingen process-/tekniskskuld
+  \item Ingen långsam byråkrati
+  \item Säkerhetstänk från start
+  \item Agila
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{GDPR hos Kry - Översikt}
+
+ \begin{itemize}
+  \item Interna processer
+  \item Data science
+  \item Spårning av användare
+  \item Right to be forgotten
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{GDPR hos Kry - Intressenter}
+
+ \begin{itemize}
+  \item RnD: CTO, VP of Eng och jag
+  \item Legal team
+  \item Team leads
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{GDPR hos Kry - Interna processer}
+
+ \begin{itemize}
+  \item Uppstartsmöten
+  \item Kartläggning
+  \item Uppföljningsmöten
+  \item Visualiserings
+  \item Förbättring
+  \item Dokumentation
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{GDPR hos Kry - Data science}
+
+ \begin{itemize}
+  \item Dataklassificering
+  \item PII \& PDL-data
+  \item Pseudonymiserad
+  \item Anonymiserad
+  \item Klustring \& differential privacy
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{GDPR hos Kry - Tracking}
+
+ \begin{itemize}
+  \item Appen, enkelt
+  \item Webben, svårt
+  \item Tredjepartsleverantörer
+  \item Legal team
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{GDPR hos Kry - Right to be forgotten}
+
+ \begin{itemize}
+  \item PDL vs PII
+  \item Avstängda användare
+  \item Säkerhetskopior
+  \item Tredjepartsintegrationer
+  \end{itemize}    
+
+\end{frame}
+
+\begin{frame}{GDPR hos Kry - Framtiden}
+
+ \begin{itemize}
+  \item Bli klara med GDPR-projekt
+  \item Jobba med leverantörer
+  \item Etablera framtida processer \& mindset
+  \end{itemize}    
+
+\end{frame}
+
+
+\begin{frame}[standout]
+Frågor?
+\end{frame}
+
+
+
+\end{document}

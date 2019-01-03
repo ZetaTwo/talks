@@ -1,0 +1,59 @@
+About Kry
+ - Healthtech startup
+ - Video meetings
+ - few years old
+
+Challenges
+ - No processes
+ - No experience
+ - Fast growth
+ - PDL vs GDPR
+
+Opportunities
+ - No legacy
+ - No bureaucracy
+ - Security mindset
+ - Agile
+
+Outline
+ - Internal processes
+ - Data science
+ - Tracking app vs web
+ - Right to be forgotten
+
+Parties of interest
+ - RnD: Me, CTO
+ - Legal Team
+ - Team leads
+
+Internal processes
+ - Startup meeting
+ - Mapping
+ - Follow up meetings
+ - Visualizations
+ - Documentation
+
+Data science
+ - Data tiering
+ - PII, PDL
+ - Pseudonyms, anonymized
+ - Bucketing, differential privacy
+
+Tracking
+ - App, easy
+ - Web, difficult
+ - Third party providers
+ - Legal team
+
+Right to be forgotten
+ - PDL vs PII
+ - Banned users
+ - Backups
+ - Third parties
+
+Roadmap
+ - Finish up internal processes
+ - Work with vendors
+ - Establish processes
+
+Questions?
