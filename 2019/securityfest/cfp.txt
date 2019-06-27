@@ -1,0 +1,16 @@
+# Who are you?
+- Full name: Carl Svensson
+- Title and company: Head of Security, KRY/LIVI
+- E-mail address: calle.svensson@zeta-two.com
+- Phone number: +46702268906
+- Additional speakers name: N/A
+- Additional speakers e-mail: N/A
+- Bio: Carl is a security professional and hobbyist currently working as the head of security at Swedish healthcare startup, KRY. He is a frequent CTF player for the Swedish top team HackingForSoju and an active member of the Swedish and international security community with a great fondness for a broad range of topics, reverse engineering being one of his favorites.
+
+# What do you want to present?
+- Title: Software obfuscation with LLVM
+- Abstract: Software obfuscation is a method to make programs more difficult to reverse engineer. There are multiple reasons why this is done such as protecting intellectual property, defense in depth or hiding bugs. No matter the reason, there are multiple ways to go about in making the software more difficult to understand, from fully manual modifications to advanced commercial obfuscation frameworks. This talks gives a short intro to software obfuscation and shows how to take advantage of the popular and extremely powerful compiler framework, LLVM, to create automated obfuscation tools for your code.
+- Demonstration (Yes/No): No
+- Audience participation: No
+- Length: 15-20 min (can possibly be made into a full length talk, if this is of interest, talk to me)
+- Do you need any additional technical equipment? There will be a projector, microphone and wireless internet at your disposal: No
