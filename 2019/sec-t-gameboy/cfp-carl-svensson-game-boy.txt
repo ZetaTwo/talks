@@ -1,0 +1,15 @@
+Please note: The contents of this CFP references materials from a competition that hasn't taken place yet. I therefore ask the SEC-T CFP committee consider the contents of this email confidential and to only be shared within the CFP committee until after June 17th.
+
+1. Carl Svensson <calle.svensson@zeta-two.com>
+2. Game Boy hacking - Making the Midnight Sun CTF Game Boy challenge from hardware to software
+3. Carl is a security professional and hobbyist currently working as the head of security at Swedish healthcare startup, Kry. He is a frequent CTF player for the Swedish top team HackingForSoju and an active member of the Swedish and international security community with a great fondness for a broad range of topics, reverse engineering being one of his favorites.
+4. For the Midnight Sun CTF finals we created a binary exploitation challenge for the Game Boy. This involved hardware modification, low level software, making a game and developing an exploit on the Z80 architecture. This talk will go through the process and various aspects of hacking the beloved game console.
+5. For the Midnight Sun CTF finals we created a binary exploitation challenge for the Game Boy. The teams were provided a home built game in the form of a Game Boy ROM. This ROM was a fully playable game which contained a bug. This bug can be used to exploit the game and get the flag hidden in memory. However, the ROM provided only contained a placeholder flag and the real one was in the version of the game running on an actual physical Game Boy. The game was written in C, compiled and flashed on to a real game cartridge. We didn't want to require the teams to have to input their exploit by pressing the buttons but instead send them from a computer. For this purpose we modified a game link cable by hooking it up to a microcontroller and connecting it to a computer via USB. This talk is a walkthrough about how we created the game, did these hardware modifications and what an exploit on the Z80 architecture, specifically the Game Boy, looks like.
+6. My previous talks: https://zeta-two.com/talks, my blog: https://zeta-two.com, my YouTube channel: https://youtube.com/ZetaTwo
+7. Stockholm
+8. Projector for slides
+9. Lightning talk (15 min) or SmallTalk (30 min)
+10. No
+11. Yes, I am willing to present at the community night.
+12. Yes, it's absolutely fine to record and stream the talk.
+13. This talk can be given as a lightning talk
