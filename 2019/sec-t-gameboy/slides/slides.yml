@@ -1,0 +1,37 @@
+slides:
+  - title: "Test slide 1"
+    bullets:
+      - "Bullet 1"
+      - "Bullet 2"
+  - title: "Test slide 2"
+    bullets:
+      - "Bullet 3"
+      - "Bullet 4"
+  - title: "Test slide 3"
+    bullets:
+      - "Bullet 5"
+      - "Bullet 6"
+  - title: "Test slide 4"
+    bullets:
+      - "Bullet 7"
+      - "Bullet 8"
+  - title: "Test slide 5"
+    bullets:
+      - "Bullet 9"
+      - "Bullet 10"
+  - title: "Test slide 6"
+    bullets:
+      - "Bullet 11"
+      - "Bullet 12"
+  - title: "Test slide 7"
+    bullets:
+      - "Bullet 13"
+      - "Bullet 14"
+  - title: "Test slide 8"
+    bullets:
+      - "Bullet 15"
+      - "Bullet 16"
+  - title: "Test slide 9"
+    bullets:
+      - "Bullet 17"
+      - "Bullet 18"
