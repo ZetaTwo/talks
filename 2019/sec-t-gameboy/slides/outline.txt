@@ -1,0 +1,57 @@
+- Title screen
+- HFS Splash screen
+- SEC-T Splash
+- Bio
+  - KTH
+  - KRY
+  - HackingForSoju
+  - Midnight Sun CTF
+
+- Thanks to b0bb
+
+- The Gameboy
+  - Game console
+  - Variants, -89, -96
+  - Game cartridges
+
+- Architecture
+  - 4.19 MHz 8-bit custom Sharp LR35902
+  - "The Game Boy’s CPU is a hybrid between the Intel 8080 and the Zilog Z80"
+
+- Peripherals
+  - LCD, 160x144 60Hz(!)
+  - Joypad
+  - Sound
+  - Game link cable
+
+- Midnight Sun CTF
+  - New Swedish CTF
+  - Qual + on-site finals
+  - Design goal: physical challs
+
+- Game 1: HFS-Calc
+  - Simple calculator app
+  - Stack buffer overflow
+  - static stack cookie
+  - ret-to-win
+
+- Game 2: HFSsssss
+  - Control input via serial
+  - Hardware mod, auto exploit
+  - Write OOB
+  - ROP
+
+- Game 3: HFS-Platformer
+  - ???
+
+- Symbolic execution
+  - Custom lifter
+  - Gameboy to PyVEX
+  - Challenge 1: Memory mapping
+  - Challenge 2: Banking
+  - Challenge 3: Interrupts
+
+- Shameless plugs
+  - Pwny Racing
+  - Midnight Sun CTF
+  - PagedOut magazine
