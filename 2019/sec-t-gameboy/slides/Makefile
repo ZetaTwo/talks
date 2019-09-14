@@ -3,10 +3,10 @@ OBJ=./obj
 
 build:
 	mkdir -p $(OBJ)
-	python3 generate_slides.py slides.yml > slide.c
-	$(BIN)/gbdk-n-compile.sh presenter.c -o $(OBJ)/presenter.rel
-	$(BIN)/gbdk-n-compile.sh slide.c -o $(OBJ)/slide.rel
-	$(BIN)/gbdk-n-link.sh $(OBJ)/presenter.rel $(OBJ)/slide.rel $(OBJ)/fonts/*.rel -o $(OBJ)/presenter.ihx
+	python3 generate_slides2.py slides2.yml > slide2.c
+	$(BIN)/gbdk-n-compile.sh presenter2.c -o $(OBJ)/presenter.rel
+	$(BIN)/gbdk-n-compile.sh slide2.c -o $(OBJ)/slide.rel
+	$(BIN)/gbdk-n-link.sh $(OBJ)/presenter.rel $(OBJ)/slide.rel $(OBJ)/fonts/8x8.rel -o $(OBJ)/presenter.ihx
 	$(BIN)/gbdk-n-make-rom.sh $(OBJ)/presenter.ihx presenter.gb
 
 .PHONY: fonts clean
