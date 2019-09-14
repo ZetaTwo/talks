@@ -24,7 +24,7 @@
 
 
 /* Bank of tiles. */
-#define tile_8x8Bank 0
+#define Tile8x8Bank 0
 /* Start of tile array. */
 extern unsigned char tile_8x8[];
 

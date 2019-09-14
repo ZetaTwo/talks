@@ -24,8 +24,8 @@
 
 
 /* Bank of tiles. */
-#define tile_alphaBank 0
+#define alphaBank 0
 /* Start of tile array. */
-extern unsigned char tile_alpha[];
+extern unsigned char alpha[];
 
 /* End of ALPHA.H */
