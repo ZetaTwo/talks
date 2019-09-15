@@ -1,5 +1,6 @@
 slides:
-  - - " "
+  #00:24
+  - - " " 
     - " #GAMEBOY HACKING"
     - " "
     - " -Modern Techniques"
@@ -18,6 +19,7 @@ slides:
     - " >SEC-T 2019"
     - " "
 
+  #00:43
   - - " "
     - " #BIO"
     - " "
@@ -37,6 +39,7 @@ slides:
     - " >calle.svensson@^"
     - " "
   
+  #01:15
   - - " "
     - " #MIDNIGHT SUN CTF"
     - " "
@@ -56,6 +59,7 @@ slides:
     - " "
     - " "
   
+  #01:27
   - - " "
     - " #HFS CALC"
     - " "
@@ -75,6 +79,7 @@ slides:
     - " "
     - " "
   
+  #00:52
   - - " "
     - " #PWNABLES"
     - " "
@@ -94,6 +99,7 @@ slides:
     - " "
     - " "
   
+  #02:13
   - - " "
     - " #GAME BOY ARCH"
     - " "
@@ -113,6 +119,7 @@ slides:
     - " "
     - " "
   
+  #01:46
   - - " "
     - " #ANGR"
     - " "
@@ -132,6 +139,7 @@ slides:
     - " "
     - " "
 
+  #06:11
   - - " "
     - " #CHALLENGES"
     - " "
@@ -151,6 +159,7 @@ slides:
     - " "
     - " "
 
+  #01:25
   - - " "
     - " #RESOURCES"
     - " "
@@ -169,7 +178,8 @@ slides:
     - " "
     - " "
     - " "
-  
+ 
+  # N/A
   - - " "
     - " #BUG HUNT"
     - " "
@@ -189,6 +199,7 @@ slides:
     - " "
     - " "
 
+  # 01:51
   - - " "
     - " #HFS SNAKE"
     - " "
@@ -208,6 +219,7 @@ slides:
     - " "
     - " "
 
+  # N/A
   - - " "
     - " #QUESTIONS"
     - " "
@@ -227,6 +239,7 @@ slides:
     - " "
     - " "
 
+  # 01:14
   - - " "
     - " #THANK YOU"
     - " #FOR LISTENING"
