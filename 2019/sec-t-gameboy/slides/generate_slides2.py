@@ -28,7 +28,10 @@ print('#include "slide2.h"')
 print('')
 
 slide_num = 0
-for slide in [[]] + slides['slides']:
+for slide in [[""]] + slides['slides']:
+    if slide[0].startswith('IMAGE'):
+        slide_num += 1
+        continue
     slide_data = []
     for line in slide:
         slide_data += ['%#04x' % FONT_8X8.index(x) for x in line.ljust(LINE_WIDTH, ' ')]
@@ -38,5 +41,5 @@ for slide in [[]] + slides['slides']:
     print('const UINT8 slide_%d[] = { %s };' % (slide_num, ', '.join(slide_data)))
     slide_num += 1
 
-print('const UINT8 *slides[] = { %s };' % ', '.join(['slide_%d' % i for i in range(1+len(slides['slides']))]))
+print('const UINT8 *slides[] = { %s };' % ', '.join(['slide_%d' % i if not slides['slides'][i-1][0].startswith('IMAGE') else '0' for i in range(1+len(slides['slides']))]))
 print('const UINT8 num_slides = %d;' % (len(slides['slides'])+1))

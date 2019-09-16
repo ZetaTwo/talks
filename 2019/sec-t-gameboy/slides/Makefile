@@ -9,9 +9,12 @@ build:
 	$(BIN)/gbdk-n-compile.sh midnightlogo.c -o $(OBJ)/midnightlogo.rel
 	$(BIN)/gbdk-n-compile.sh hfslogo.c -o $(OBJ)/hfslogo.rel
 	$(BIN)/gbdk-n-compile.sh calcscreenshot.c -o $(OBJ)/calcscreenshot.rel
+	$(BIN)/gbdk-n-compile.sh calcscreenshot2.c -o $(OBJ)/calcscreenshot2.rel
+	$(BIN)/gbdk-n-compile.sh calcscreenshot3.c -o $(OBJ)/calcscreenshot3.rel
+	$(BIN)/gbdk-n-compile.sh front.c -o $(OBJ)/front.rel
 
 	$(BIN)/gbdk-n-compile.sh slide2.c -o $(OBJ)/slide.rel
-	$(BIN)/gbdk-n-link.sh $(OBJ)/presenter.rel $(OBJ)/slide.rel $(OBJ)/calcscreenshot.rel $(OBJ)/hfslogo.rel $(OBJ)/midnightlogo.rel $(OBJ)/fonts/8x8.rel -o $(OBJ)/presenter.ihx
+	$(BIN)/gbdk-n-link.sh $(OBJ)/presenter.rel $(OBJ)/slide.rel $(OBJ)/front.rel $(OBJ)/calcscreenshot*.rel $(OBJ)/hfslogo.rel $(OBJ)/midnightlogo.rel $(OBJ)/fonts/8x8.rel -o $(OBJ)/presenter.ihx
 	$(BIN)/gbdk-n-make-rom.sh $(OBJ)/presenter.ihx presenter.gb
 
 .PHONY: fonts clean

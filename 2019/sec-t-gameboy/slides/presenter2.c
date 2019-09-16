@@ -6,6 +6,7 @@
 #include "midnightlogo.h"
 #include "hfslogo.h"
 #include "calcscreenshot.h"
+#include "front.h"
 
 void clear_screen(void) {
     set_bkg_tiles(0, 0, 20, 18, slides[0]);
@@ -37,38 +38,73 @@ void slide_mode(void) {
     SHOW_BKG;
 }
 
+int getjoypad(void) {
+    while(1) {
+        switch(joypad()) {
+            case J_LEFT:
+            return J_LEFT;
+            break;
+            case J_RIGHT:
+            return J_RIGHT;
+            break;
+            default:
+            break;
+        }
+    }
+}
+
+void show_image(UINT8 len, UINT8* data, UINT8* map) {
+    HIDE_BKG;
+    set_bkg_data(0, len, data);
+    set_bkg_tiles(0, 0, 20, 18, map);
+    SHOW_BKG;
+}
+
 void main()
 {
     init();
 
-    HIDE_BKG;
-    set_bkg_data(0, midnight_logo_data_len, midnight_logo_data);
-    set_bkg_tiles(0, 0, 20, 18, midnight_logo);
-    SHOW_BKG;
-    waitpad(J_A);
-    waitpadup();
-
-    HIDE_BKG;
-    set_bkg_data(0, hfs_logo_data_len, hfs_logo_data);
-    set_bkg_tiles(0, 0, 20, 18, hfs_logo);
-    SHOW_BKG;
-    waitpad(J_A);
-    waitpadup();
-
-    HIDE_BKG;
-    set_bkg_data(0, calc_data_len, calc_data);
-    set_bkg_tiles(0, 0, 20, 18, calc);
-    SHOW_BKG;
-    waitpad(J_A);
-    waitpadup();
-
     slide_mode();
 
-    UINT8 current_slide;
+    UINT8 current_slide = 0;
+
     while(1) {
-        set_slide(current_slide+1);
-        current_slide = (current_slide+1) % (num_slides-1);
-        waitpad(J_A);
+        switch(current_slide+1) {
+            case 1:
+            show_image(front_data_len, front_data, front);
+            break;
+            case 3:
+            show_image(hfs_logo_data_len, hfs_logo_data, hfs_logo);
+            break;
+            case 5:
+            show_image(midnight_logo_data_len, midnight_logo_data, midnight_logo);
+            break;
+            case 8:
+            show_image(calc_data_len, calc_data, calc);
+            break;
+            case 10:
+            show_image(calccrash_data_len, calccrash_data, calccrash);
+            break;
+            case 11:
+            show_image(calcflag_data_len, calcflag_data, calcflag);
+            break;
+            default:
+            slide_mode();
+            set_slide(current_slide+1);
+            break;
+        }
+
+        switch (getjoypad())
+        {
+        case J_LEFT:
+            current_slide = (current_slide-1+(num_slides-1)) % (num_slides-1);
+            break;
+        case J_RIGHT:
+            current_slide = (current_slide+1) % (num_slides-1);
+            break;
+        default:
+            break;
+        }
         waitpadup();
     }    
 }

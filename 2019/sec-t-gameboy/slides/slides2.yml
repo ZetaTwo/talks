@@ -1,5 +1,5 @@
 slides:
-  #00:24
+  #1 - 00:24
   - - " " 
     - " #GAMEBOY HACKING"
     - " "
@@ -19,7 +19,7 @@ slides:
     - " >SEC-T 2019"
     - " "
 
-  #00:43
+  #2 - 00:43
   - - " "
     - " #BIO"
     - " "
@@ -38,8 +38,11 @@ slides:
     - " >Web: zeta-two.com"
     - " >calle.svensson@^"
     - " "
+
+  #3
+  - - "IMAGE HFS"
   
-  #01:15
+  #4 - 01:15
   - - " "
     - " #MIDNIGHT SUN CTF"
     - " "
@@ -58,28 +61,31 @@ slides:
     - " "
     - " "
     - " "
+
+  #5
+  - - "IMAGE Midnight Sun"
   
-  #01:27
+  #6 - 01:27
   - - " "
     - " #HFS CALC"
     - " "
     - " >Pwnsmith: b0bb"
     - " "
-    - " >Calculator \"game\""
+    - " >Pwnable"
     - " "
-    - " >Stack buffer"
     - " "
-    - " >Stack cookie"
-    - " -Static"
     - " "
-    - " >Win function"
+    - " "
+    - " "
+    - " "
+    - " "
     - " "
     - " "
     - " "
     - " "
     - " "
   
-  #00:52
+  #7 - 00:52
   - - " "
     - " #PWNABLES"
     - " "
@@ -98,8 +104,37 @@ slides:
     - " "
     - " "
     - " "
+
+  #8
+  - - "IMAGE Calc"
+
+  #9 - 
+  - - " "
+    - " #HFS CALC"
+    - " "
+    - " >Pwnable"
+    - " "
+    - " >Pwnsmith: b0bb"
+    - " "
+    - " >Calculator \"game\""
+    - " "
+    - " >Stack buffer"
+    - " "
+    - " >Stack cookie"
+    - " -Static"
+    - " "
+    - " >Win function"
+    - " "
+    - " "
+    - " "
   
-  #02:13
+  #10
+  - - "IMAGE Calc crash"
+
+  #11
+  - - "IMAGE Calc flag"
+  
+  #12 - 02:13
   - - " "
     - " #GAME BOY ARCH"
     - " "
@@ -119,7 +154,7 @@ slides:
     - " "
     - " "
   
-  #01:46
+  #13 - 01:46
   - - " "
     - " #ANGR"
     - " "
@@ -147,7 +182,8 @@ slides:
     - " -24bit pseudo arch"
     - " "
     - " >Control registers"
-    - " -Custom memory"
+    - " -Breakpoint"
+    - " -Hook"
     - " "
     - " >Interrupt"
     - " -V-blank"
@@ -155,6 +191,62 @@ slides:
     - " -Timer"
     - " -Serial"
     - " -Input"
+    - " "
+    - " "
+
+  - - " "
+    - " #CHALL 1-BANKS"
+    - " "
+    - " >Bank switching"
+    - " -24bit pseudo arch"
+    - " -16bit addresses"
+    - " -8bit bank reg"
+    - " -[BR:PTR] read"
+    - " "
+    - " "
+    - " "
+    - " "
+    - " "
+    - " "
+    - " "
+    - " "
+    - " "
+    - " "
+
+  - - " "
+    - " #CHALL 2-CTRL REG"
+    - " "
+    - " >Non-flat memory"
+    - " -Memory mapped regs"
+    - " -Ex: bank switching"
+    - " -Ex: RAM mode"
+    - " -Ex: RTC control"
+    - " "
+    - " >Breakpoint"
+    - " -Filter"
+    - " -Divert"
+    - " -Prevent"
+    - " "
+    - " "
+    - " "
+    - " "
+    - " "
+
+  - - " "
+    - " #CHALL 3-IRQ"
+    - " "
+    - " >Interrupts"
+    - " "
+    - " >Disregard"
+    - " -Serial"
+    - " "
+    - " >Pray & -||-"
+    - " -V-blank"
+    - " -LCD stat"
+    - " -Input"
+    - " "
+    - " >Manual :("
+    - " -Timer"
     - " "
     - " "
     - " "
@@ -181,23 +273,23 @@ slides:
  
   # N/A
   - - " "
-    - " #BUG HUNT"
+    - " #BUG HUNT PROJECT"
     - " "
+    - " >Automatic analysis"
+    - " -Semi automatic"
+    - " -Filter bad IRQ"
     - " "
+    - " >angr"
+    - " -Partial"
+    - " -Full?"
     - " "
+    - " >Fuzzing"
+    - " -Custom emulator"
+    - " -Headless"
+    - " -Games, hard"
     - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
+    - " >1 finding so far"
+    - " -TBA, Any% WR?"
 
   # 01:51
   - - " "
@@ -223,20 +315,20 @@ slides:
   - - " "
     - " #QUESTIONS"
     - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
-    - " "
+    - "    ############"
+    - "    #          #"
+    - "    # #######  #"
+    - "    ###     #  #"
+    - "         ####  #"
+    - "         #     #"
+    - "         # #####"
+    - "         # #"
+    - "         # #"
+    - "         ###"
+    - "    "
+    - "         ###"
+    - "         # #"
+    - "         ###"
     - " "
 
   # 01:14
@@ -254,8 +346,8 @@ slides:
     - " -LarsH"
     - " -grocid"
     - " "
-    - " "
-    - " "
+    - " >angr"
+    - " -rhelmot"
     - " "
     - " "
 
