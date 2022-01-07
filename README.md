@@ -3,6 +3,10 @@
 This repo contains slides and information on talks I have given.  
 For more context, code and pdfs, please check [the talk page](https://zeta-two.com/talks) on my website.  
 
+## 2020
+
+[MassifCon 2020 - Theft and Doxxing](2020/massifcon-theft-doxxing) - A presentation about the two most unethical things I have done in my career.
+
 ## 2019
 
 [Guest lecture at KTH - The Basics of Binary Exploitation](2019/kth-exploits) - A presentation about the basics of binary exploitation.  
