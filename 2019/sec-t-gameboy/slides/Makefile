@@ -1,31 +1,31 @@
-BIN=/home/zetatwo/tools/gbdk-n/bin
+CC=/opt/gbdk/bin/lcc
 OBJ=./obj
 
 build:
 	mkdir -p $(OBJ)
 	python3 generate_slides2.py slides2.yml > slide2.c
-	$(BIN)/gbdk-n-compile.sh presenter2.c -o $(OBJ)/presenter.rel
+	$(CC) -c presenter2.c -o $(OBJ)/presenter.rel
 
-	$(BIN)/gbdk-n-compile.sh midnightlogo.c -o $(OBJ)/midnightlogo.rel
-	$(BIN)/gbdk-n-compile.sh hfslogo.c -o $(OBJ)/hfslogo.rel
-	$(BIN)/gbdk-n-compile.sh calcscreenshot.c -o $(OBJ)/calcscreenshot.rel
-	$(BIN)/gbdk-n-compile.sh calcscreenshot2.c -o $(OBJ)/calcscreenshot2.rel
-	$(BIN)/gbdk-n-compile.sh calcscreenshot3.c -o $(OBJ)/calcscreenshot3.rel
-	$(BIN)/gbdk-n-compile.sh front.c -o $(OBJ)/front.rel
+	$(CC) -c midnightlogo.c -o $(OBJ)/midnightlogo.rel
+	$(CC) -c hfslogo.c -o $(OBJ)/hfslogo.rel
+	$(CC) -c calcscreenshot.c -o $(OBJ)/calcscreenshot.rel
+	$(CC) -c calcscreenshot2.c -o $(OBJ)/calcscreenshot2.rel
+	$(CC) -c calcscreenshot3.c -o $(OBJ)/calcscreenshot3.rel
+	$(CC) -c front.c -o $(OBJ)/front.rel
 
-	$(BIN)/gbdk-n-compile.sh slide2.c -o $(OBJ)/slide.rel
-	$(BIN)/gbdk-n-link.sh $(OBJ)/presenter.rel $(OBJ)/slide.rel $(OBJ)/front.rel $(OBJ)/calcscreenshot*.rel $(OBJ)/hfslogo.rel $(OBJ)/midnightlogo.rel $(OBJ)/fonts/8x8.rel -o $(OBJ)/presenter.ihx
-	$(BIN)/gbdk-n-make-rom.sh $(OBJ)/presenter.ihx presenter.gb
+	$(CC) -c slide2.c -o $(OBJ)/slide.rel
+	$(CC) $(OBJ)/presenter.rel $(OBJ)/slide.rel $(OBJ)/front.rel $(OBJ)/calcscreenshot*.rel $(OBJ)/hfslogo.rel $(OBJ)/midnightlogo.rel $(OBJ)/fonts/8x8.rel -o $(OBJ)/presenter.ihx
+	$(CC) $(OBJ)/presenter.ihx -o presenter.gb
 
 .PHONY: fonts clean
 
 fonts:
 	mkdir -p $(OBJ)/fonts
-	$(BIN)/gbdk-n-compile.sh fonts/8x8.c -o $(OBJ)/fonts/8x8.rel
-	$(BIN)/gbdk-n-compile.sh fonts/alpha.c -o $(OBJ)/fonts/alpha.rel
-	$(BIN)/gbdk-n-compile.sh fonts/digits.c -o $(OBJ)/fonts/digits.rel
-	$(BIN)/gbdk-n-compile.sh fonts/shaded_alpha.c -o $(OBJ)/fonts/shaded_alpha.rel
-	$(BIN)/gbdk-n-compile.sh fonts/shadow.c -o $(OBJ)/fonts/shadow.rel
+	$(CC) -c fonts/8x8.c -o $(OBJ)/fonts/8x8.rel
+	$(CC) -c fonts/alpha.c -o $(OBJ)/fonts/alpha.rel
+	$(CC) -c fonts/digits.c -o $(OBJ)/fonts/digits.rel
+	$(CC) -c fonts/shaded_alpha.c -o $(OBJ)/fonts/shaded_alpha.rel
+	$(CC) -c fonts/shadow.c -o $(OBJ)/fonts/shadow.rel
 
 clean:
 	rm -rf $(OBJ)
