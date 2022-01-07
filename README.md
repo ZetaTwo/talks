@@ -5,12 +5,12 @@ For more context, code and pdfs, please check [the talk page](https://zeta-two.c
 
 ## 2019
 
-[Guest lecture at KTH - The Basics of Binary Exploitation](kth-exploits) - A presentation about the basics of binary exploitation.  
-[SecuriTea - Lecture on basics of binary exploitation](foocafe-exploits) - A presentation about the basics of binary exploitation.  
-[0xFF - Talk and workshop about CTF](0xff-ctf) - A presentation and workshop about CTFs.  
-[SecurityFest 2019 - Software Obfuscation with LLVM](securityfest) - A presentation about code obfuscation and LLVM.  
-[SEC-T 2019 - Game Boy hacking / Bringing VGA to the Game Boy](sec-t-gameboy) - Two presentations given at SEC-T 2019 about Game Boy hacking and building a Game Boy VGA adapter  
-[KonsulaTED #3 - Basics of binary exploitation](konsulated) - A talk at our private meetup about binary exploitation.  
+[Guest lecture at KTH - The Basics of Binary Exploitation](2019/kth-exploits) - A presentation about the basics of binary exploitation.  
+[SecuriTea - Lecture on basics of binary exploitation](2019/foocafe-exploits) - A presentation about the basics of binary exploitation.  
+[0xFF - Talk and workshop about CTF](2019/0xff-ctf) - A presentation and workshop about CTFs.  
+[SecurityFest 2019 - Software Obfuscation with LLVM](2019/securityfest) - A presentation about code obfuscation and LLVM.  
+[SEC-T 2019 - Game Boy hacking / Bringing VGA to the Game Boy](2019/sec-t-gameboy) - Two presentations given at SEC-T 2019 about Game Boy hacking and building a Game Boy VGA adapter  
+[KonsulaTED #3 - Basics of binary exploitation](2019/konsulated) - A talk at our private meetup about binary exploitation.  
 
 
 ## 2018
