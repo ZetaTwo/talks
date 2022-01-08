@@ -6,6 +6,7 @@ For more context, code and pdfs, please check [the talk page](https://zeta-two.c
 ## 2020
 
 [MassifCon 2020 - Theft and Doxxing](2020/massifcon-theft-doxxing) - A presentation about the two most unethical things I have done in my career.
+[Security at KRY/LIVI 2020](2020/kry-chalmers) - Presentation for students at Chalmer's university about IT security at KRY/LIVI
 
 ## 2019
 
@@ -15,6 +16,7 @@ For more context, code and pdfs, please check [the talk page](https://zeta-two.c
 [SecurityFest 2019 - Software Obfuscation with LLVM](2019/securityfest) - A presentation about code obfuscation and LLVM.  
 [SEC-T 2019 - Game Boy hacking / Bringing VGA to the Game Boy](2019/sec-t-gameboy) - Two presentations given at SEC-T 2019 about Game Boy hacking and building a Game Boy VGA adapter  
 [KonsulaTED #3 - Basics of binary exploitation](2019/konsulated) - A talk at our private meetup about binary exploitation.  
+[Security at KRY/LIVI 2019](2019/kry-chalmers) - Presentation for students at Chalmer's university about IT security at KRY/LIVI
 
 
 ## 2018
