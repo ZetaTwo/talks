@@ -3,13 +3,14 @@
 This repo contains slides and information on talks I have given.  
 For more context, code and pdfs, please check [the talk page](https://zeta-two.com/talks) on my website.  
 
-## 2020
+## 2021
+[DSC Munich - An Introduction to Binary Exploitation](2021/dsc-exploit) - A presentation about the basics of binary exploitation for students at DSC Munich  
 
-[MassifCon 2020 - Theft and Doxxing](2020/massifcon-theft-doxxing) - A presentation about the two most unethical things I have done in my career.
-[Security at KRY/LIVI 2020](2020/kry-chalmers) - Presentation for students at Chalmer's university about IT security at KRY/LIVI
+## 2020
+[MassifCon 2020 - Theft and Doxxing](2020/massifcon-theft-doxxing) - A presentation about the two most unethical things I have done in my career.  
+[Security at KRY/LIVI 2020](2020/kry-chalmers) - Presentation for students at Chalmer's university about IT security at KRY/LIVI  
 
 ## 2019
-
 [Guest lecture at KTH - The Basics of Binary Exploitation](2019/kth-exploits) - A presentation about the basics of binary exploitation.  
 [SecuriTea - Lecture on basics of binary exploitation](2019/foocafe-exploits) - A presentation about the basics of binary exploitation.  
 [0xFF - Talk and workshop about CTF](2019/0xff-ctf) - A presentation and workshop about CTFs.  
@@ -17,7 +18,6 @@ For more context, code and pdfs, please check [the talk page](https://zeta-two.c
 [SEC-T 2019 - Game Boy hacking / Bringing VGA to the Game Boy](2019/sec-t-gameboy) - Two presentations given at SEC-T 2019 about Game Boy hacking and building a Game Boy VGA adapter  
 [KonsulaTED #3 - Basics of binary exploitation](2019/konsulated) - A talk at our private meetup about binary exploitation.  
 [Security at KRY/LIVI 2019](2019/kry-chalmers) - Presentation for students at Chalmer's university about IT security at KRY/LIVI
-
 
 ## 2018
 [Nixucon 2018: Using SMT solvers for binary analysis and exploitation](2018/nixucon) - Essentially my SEC-T 2016 and 2018 talks combined into a longer talk.  
