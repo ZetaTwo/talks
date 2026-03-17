@@ -3,6 +3,9 @@
 This repo contains slides and information on talks I have given.  
 For more context, code and pdfs, please check [the talk page](https://zeta-two.com/talks) on my website.  
 
+## 2026
+[RE//verse 2026 - Reverse Engineering Age of Empires 2 - Upgrading tools from Dark Age to Castle Age](2026/reverse-aoe2) - Talk from [RE//verse 2026](https://re-verse.io) about reverse engineering AoE2 and the tools and processes I developed as part of it.
+
 ## 2021
 [DSC Munich - An Introduction to Binary Exploitation](2021/dsc-exploit) - A presentation about the basics of binary exploitation for students at DSC Munich  
 
